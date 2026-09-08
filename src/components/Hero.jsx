@@ -1,6 +1,7 @@
 import React from 'react'
 import { profile } from '../data/profile.js'
 import { Icon } from './Icon.jsx'
+import { withBase } from './Img.jsx'
 
 export default function Hero() {
   const go = (id) => {
@@ -20,7 +21,7 @@ export default function Hero() {
         poster=""
         onError={(e) => { e.currentTarget.style.display = 'none' }}
       >
-        <source src={profile.heroVideo} type="video/mp4" />
+        <source src={withBase(profile.heroVideo)} type="video/mp4" />
       </video>
 
       {/* 动画网格背景（视频缺失时作为高级感底图） */}

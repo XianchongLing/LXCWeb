@@ -2,6 +2,7 @@ import React from 'react'
 import Section from './Section.jsx'
 import { games } from '../data/profile.js'
 import { Icon, gameIconKey, gameColorKey } from './Icon.jsx'
+import { withBase } from './Img.jsx'
 
 export default function Gaming() {
   return (
@@ -17,7 +18,7 @@ export default function Gaming() {
           <article className={`game__card game__card--${gameColorKey(g.type)}`} key={i}>
             <div className="game__icon">
               {g.logo ? (
-                <img src={g.logo} alt={g.name} className="game__logo" />
+                <img src={withBase(g.logo)} alt={g.name} className="game__logo" />
               ) : (
                 <Icon name={gameIconKey(g.type, g.platform)} size={24} />
               )}
