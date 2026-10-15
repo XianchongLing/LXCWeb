@@ -9,7 +9,7 @@ export const profile = {
   enName: 'LING XIANCHONG',
   title: '统计 · 数据分析 / 游戏策划',
   tagline: '用数据理解世界，用模型驱动决策',
-  avatar: '/images/avatar.jpg',
+  avatar: '/images/avatar.jpg?v=2',
   gender: '男',
   age: 23,
   origin: '安徽 · 马鞍山',
